@@ -1,5 +1,5 @@
 # fb-gender-json
-A Facebook generated name list with their gender in a JSON file.
+A Facebook generated name list (**28791 names**) with their gender in a JSON file.
 
 The aim of this list is to be used for social network analysis.
 
