@@ -6,7 +6,7 @@ import sys
 import codecs
 import json
 
-most_likely_ratio = 1.5
+most_likely_ratio = 2
 
 def adapt():
 	firstnames = {}
@@ -19,8 +19,8 @@ def adapt():
 		elif float(line_elts[2]) >= most_likely_ratio * float(line_elts[1]):
 			most_likely = "female"
 		firstnames[line_elts[0].title()] = {
-			"male":line_elts[1],
-			"female":line_elts[2],
+			"male":int(line_elts[1]),
+			"female":int(line_elts[2]),
 			"most_likely": most_likely
 		}
 	f.close()
